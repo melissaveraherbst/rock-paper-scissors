@@ -13,8 +13,8 @@ const server = http.createServer((request, response) => {
         case "/":
             // Check if request method is GET
             if (request.method === "GET") {
-                // Get value of 'name' query
-                const name = url.searchParams.get("name");
+                // Get value of 'name' query (and capitalize the first letter)
+                const name = (url.searchParams.get("name")).charAt(0).toUpperCase() + (url.searchParams.get("name")).slice(1) || "Player";
                 console.log(`${name} has started playing!`);
                 // Write response header
                 response.statusCode = 200;
