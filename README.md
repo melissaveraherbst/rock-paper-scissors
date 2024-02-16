@@ -1,5 +1,11 @@
 # Rock Paper Scissors
 
-## Project Objective
+This project uses Node.js and HTTP to create a simple server that handles user interactions through a web browser. All of the server logic is handled with Node.js built-in modules.
 
-Using the `http` module, we will build a simple HTTP server. We will practice how to route requests based on pathname and request methods. We will also be using other core Node.js components in this project. We will use the `fs` module to stream HTML files and create an URL object to extract queries from a URL.
+**How to use**
+
+1. Clone the repo
+2. Run `app.js` to start the server
+3. Open the browser at localhost:4001/?name=YOUR_NAME
+
+Feel free to customize and enhance the project as needed. Have fun playing Rock-Paper-Scissors!
