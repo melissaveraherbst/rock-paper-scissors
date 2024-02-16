@@ -2,7 +2,7 @@
 
 This project uses Node.js and HTTP to create a simple server that handles user interactions through a web browser. All of the server logic is handled with Node.js built-in modules.
 
-**How to use**
+### How to use
 
 1. Navigate to the folder where you want the cloned directory.
 2. Open your terminal and paste the following:
