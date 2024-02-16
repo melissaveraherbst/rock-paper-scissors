@@ -4,10 +4,16 @@ This project uses Node.js and HTTP to create a simple server that handles user i
 
 **How to use**
 
-1. Clone the repo
-2. Run `app.js` to start the server
-3. Open the browser at `localhost:4001/?name=YOUR_NAME`
-4. Start playing by selecting 'rock', 'paper', or 'scissors'
+1. Navigate to the folder where you want the cloned directory.
+2. Open your terminal and paste the following:
+
+    ```bash
+    git clone https://github.com/melissaveraherbst/rock-paper-scissors.git
+    ```
+    
+4. Run `app.js` to start the server
+5. Open the browser at `localhost:4001/?name=YOUR_NAME`
+6. Start playing by selecting 'rock', 'paper', or 'scissors'
 
 > [!NOTE]
 > The game output appears in the browser's console
