@@ -11,5 +11,3 @@ This project uses Node.js and HTTP to create a simple server that handles user i
 
 > [!NOTE]
 > The game output appears in the browser's console
-
-Feel free to customize and enhance the project as needed. Have fun playing Rock-Paper-Scissors!
