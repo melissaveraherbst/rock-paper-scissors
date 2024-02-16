@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Scissors</title>
+    <script src="./app.js"></script>
+</head>
+
+<body>
+    <select name="choice" id="choice">
+        <option value="rock">🪨 rock</option>
+        <option value="paper">📄 paper</option>
+        <option value="Scissors">✂️ scissors</option>
+    </select>
+    <button id="submit" type="submit">Submit</button>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const choiceInput = document.getElementById('choice');
+            const submitButton = document.getElementById('submit');
+
+            submitButton.addEventListener('click', function () {
+                // Get the user's choice from the input
+                const userChoice = choiceInput.value;
+
+                // Make a POST request to the server
+                fetch('http://localhost:4001', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'text/plain',
+                    },
+                    body: userChoice,
+                })
+                    .then(response => response.text())
+                    .then(data => {
+                        // Handle the response from the server
+                        console.log(data);
+                    })
+                    .catch(error => {
+                        console.error('Error:', error);
+                    });
+            });
+        })
+    </script>
+</body>
+
+</html>
